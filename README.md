@@ -1,101 +1,66 @@
-# excel-data-analysis-dashboard
-Workforce and HR data analysis dashboard in Excel using PivotTables, interactive slicers, charts, and macros to explore people metrics.
-📊 HR Analytics & Workforce Insights Dashboard
+# 📊 HR Analytics Data Analysis Dashboard
 
-An interactive, macro-enabled Microsoft Excel dashboard built to explore employee demographics, department performance, regional distribution, and compensation insights across Indian office locations.
+![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![PivotTables](https://img.shields.io/badge/PivotTables_%26_Slicers-Dynamic_Filtering-blue?style=for-the-badge)
+![VBA Macros](https://img.shields.io/badge/VBA_Macros-Enabled_(.xlsm)-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
-🔗 Quick Project Links
+An interactive **Human Resources & Workforce Analytics Dashboard** built in Microsoft Excel. This project transforms raw employee records into an executive-ready, sliceable visual interface using **PivotTables**, **interactive Slicers**, **dynamic Charts**, and **VBA Macro controls** to analyze employee demographics, departmental headcount, and annual compensation across major Indian tech hubs.
 
-📂 Dataset & Macro Workbook: HR_Analytics_Dashboard_Dataset.xlsm
+---
 
-🖼️ Full Dashboard Preview: Screenshot (5).png
+## 🔗 Quick Project Links
 
-🌐 Repository: Destroyer-sword/excel-data-analysis-dashboard
+* 📂 **Dataset & Macro Workbook:** [HR_Analytics_Dashboard_Dataset.xlsm](https://github.com/Destroyer-sword/excel-data-analysis-dashboard/blob/main/HR_Analytics_Dashboard_Dataset.xlsm)
+* 🖼️ **Full Dashboard Preview:** [Screenshot (5).png](https://github.com/Destroyer-sword/excel-data-analysis-dashboard/blob/main/Screenshot%20%285%29.png)
+* 🌐 **Repository:** [Destroyer-sword/excel-data-analysis-dashboard](https://github.com/Destroyer-sword/excel-data-analysis-dashboard)
 
-📸 Dashboard Preview
+---
 
-🔍 Detailed Breakdown of the Dashboard (As Shown Above)
+## 📸 Live Dashboard Preview
 
-This dashboard is engineered for self-service workforce exploration using dynamic filtering, segmented PivotTables, macro-linked controls, and multi-chart visual storytelling:
+![HR Analytics Dashboard Preview](https://raw.githubusercontent.com/Destroyer-sword/excel-data-analysis-dashboard/main/Screenshot%20%285%29.png)
 
-1. Interactive Top Slicers (Multi-Dimensional Filtering)
+---
 
-Department Slicer (Top Row): Features 7 interactive buttons (Customer Support, Engineering, Finance, Human Resources, Marketing, Operations, and Sales). In the preview above, Sales is actively selected.
+## 🔍 Detailed Breakdown of the Dashboard View
 
-Location / City Slicer (Second Row): Filters employee records across 5 major Indian hubs (Bengaluru, Delhi NCR, Hyderabad, Kolkata, and Mumbai). In the preview above, Bengaluru is selected, dynamically updating all tables and charts below for Sales employees in Bengaluru.
+In the dashboard snapshot above (filtered dynamically for **Department: Sales** and **Location: Bengaluru**), the interface is organized into three synchronized layers:
 
-2. Macro-Enabled View Controls (Dashboard 1 – Dashboard 4)
+### 1. Interactive Top Slicers (Multi-Dimensional Filtering)
+* **Department Slicer (Top Row):** Horizontal button bar covering **Customer Support**, **Engineering**, **Finance**, **Human Resources**, **Marketing**, **Operations**, and **Sales** *(currently active in gold)*.
+* **Location Slicer (Second Row):** Regional filter bar spanning **Bengaluru** *(currently active in gold)*, **Delhi NCR**, **Hyderabad**, **Kolkata**, and **Mumbai**.
+* Selecting any combination of Department and Location updates all underlying PivotTables and charts simultaneously.
 
-Positioned directly above each PivotTable are custom callout headers with interactive checkboxes (Dashboard 1, Dashboard 2, Dashboard 3, and Dashboard 4) powered by VBA (vbaProject.bin) to toggle and manage individual dashboard panels cleanly.
+### 2. Macro-Enabled Dashboard Modules & PivotTables
+Four modular PivotTable views (`Dashboard 1` through `Dashboard 4`), each paired with interactive form-control checkboxes (`Dashboard 1` – `Dashboard 4`), summarize key workforce segments:
+* **Dashboard 1 — Senior Workforce Age Distribution (`Sum of Age`):** Lists senior team members (*Aarav Chatterjee: 54, Vikram Sharma: 48, Aditya Nair: 47, Rahul Nair: 44, Meera Joshi: 42*) with a combined age total of **235**.
+* **Dashboard 2 — Early-Career Cohort Age Breakdown (`Sum of Age`):** Tracks younger/junior talent (*Priya Bose: 29, Vikram Ghosh: 23, Divya Malhotra: 22, Rohan Sharma: 22, Sneha Kumar: 22*) with a combined age total of **118**.
+* **Dashboard 3 — Top Compensation Tier (`Sum of Annual_Salary`):** Highlights higher-earning employees in INR (*Nikhil Ghosh: ₹1,96,400.0, Siddharth Chatterjee: ₹1,26,600.0, Aditya Reddy: ₹1,25,700.0, Varun Bose: ₹1,23,700.0, Divya Kumar: ₹1,22,000.0*), totaling **₹6,94,400.0**.
+* **Dashboard 4 — Mid/Entry Compensation Tier (`Sum of Annual_Salary`):** Displays compensation across the next employee cohort (*Ananya Mukherjee: ₹63,500.0, Rahul Das: ₹62,800.0, Vikram Ghosh: ₹61,600.0, Rohan Sharma: ₹60,000.0, Riya Chatterjee: ₹58,800.0*), totaling **₹3,06,700.0**.
 
-3. Segmented PivotTables (Employee-Level Metrics)
+### 3. Synchronized Data Visualizations (Bottom Row)
+* **Horizontal Bar Chart (Left):** Visualizes employee age comparison from **Dashboard 1**, making it easy to spot the most experienced team members at a glance.
+* **Percentage Pie Chart (Center):** Breaks down the top salary share from **Dashboard 3**, clearly showing **Nikhil Ghosh** holding the largest share (**28%**) while the remaining four peers hold **18%** each.
+* **Salary Trend Line Chart (Right):** Plots the descending compensation curve across **Dashboard 4** from **₹63,500.0** down to **₹58,800.0**.
 
-Four distinct PivotTables break down the filtered workforce into specific cohorts:
+---
 
-Dashboard 1 (Sum of Age): Displays age metrics for a 5-employee cohort (Aarav Chatterjee, Aditya Nair, Meera Joshi, Rahul Nair, Vikram Sharma) with a Grand Total of 235.
+## 🛠️ What I Built & Workflow Summary
 
-Dashboard 2 (Sum of Age): Tracks a younger 5-employee cohort (Divya Malhotra, Priya Bose, Rohan Sharma, Sneha Kumar, Vikram Ghosh) with a Grand Total of 118.
+1. **Data Preparation & Structuring:** Cleaned and structured employee HR records (Employee Name, Department, Office Location, Age, and Annual Salary in `₹`) in the source worksheet.
+2. **PivotTable Modeling:** Created **4 independent PivotTables** to segment employee age groups and compensation tiers without altering raw data.
+3. **Interactive Slicer Architecture:** Connected **2 horizontal multi-column Slicers** (Department & Location) across PivotTables for one-click cross-filtering.
+4. **VBA & Form Control Integration:** Added checkbox controls (`Dashboard 1`–`Dashboard 4`) and macro support (`.xlsm`) to manage dashboard view states.
+5. **Visual Design & Formatting:** Styled headers, currency formatting (`₹`), callout badges, and three distinct chart types (Bar, Pie, and Line) for fast executive readability.
 
-Dashboard 3 (Sum of Annual_Salary): Highlights higher compensation earners in INR (₹), led by Nikhil Ghosh (₹ 1,96,400.0) down to Divya Kumar (₹ 1,22,000.0), totaling ₹ 6,94,400.0.
+---
 
-Dashboard 4 (Sum of Annual_Salary): Tracks mid-tier compensation earners in INR (₹), led by Ananya Mukherjee (₹ 63,500.0) down to Riya Chatterjee (₹ 58,800.0), totaling ₹ 3,06,700.0.
+## 🚀 How to Run This Workbook Locally
 
-4. Visual Analytics (Bottom Chart Suite)
+<details>
+<summary><b>Click to expand step-by-step instructions</b></summary>
 
-Horizontal Bar Chart (Bottom Left): Compares employee ages from Dashboard 1, visually emphasizing age spread across the team (ranging from 42 to 54).
-
-Pie Chart (Bottom Center): Illustrates percentage compensation share among the top earners in Dashboard 3, showing Nikhil Ghosh holding the largest share at 28%, while the remaining four employees each represent 18%.
-
-Line Chart with Markers (Bottom Right): Plots the salary progression curve from Dashboard 4 (₹ 63,500.0 down to ₹ 58,800.0), making compensation drop-offs easy to spot at a glance.
-
-🛠️ What I Built & Learned in This Project
-
-Data Preparation & Structuring: Cleaned and structured raw employee records (Employee Name, Department, City/Location, Age, and Annual_Salary formatted in INR ₹).
-
-PivotTable Architecture: Built 4 connected PivotTables to segment workforce cohorts by age and salary without duplicating raw data.
-
-Interactive Slicer Styling: Customized horizontal button slicers with distinct active (gold/amber) and inactive (olive green) states for intuitive filtering.
-
-Chart Design & Data Labels: Created complementary chart types (Bar, Pie, and Line) with clear percentage and currency labels tailored to each metric.
-
-VBA & Form Controls: Embedded macro-enabled form checkboxes (vbaProject.bin) inside styled callout shapes to make the dashboard interactive.
-
-🚀 How to Run This Workbook Locally
-
-Download the Excel File:
-
-Click on HR_Analytics_Dashboard_Dataset.xlsm in this repository and select Download raw file (or clone the repo using git clone https://github.com/Destroyer-sword/excel-data-analysis-dashboard.git).
-
-Open in Microsoft Excel Desktop:
-
-Open the .xlsm file in Microsoft Excel (Desktop app is required so Slicers and VBA macros work properly).
-
-Enable Macros:
-
-Click Enable Editing and Enable Content on the yellow security bar at the top of Excel.
-
-Interact with the Dashboard:
-
-Click any Department or City button on the top slicers to watch all 4 PivotTables and 3 charts update automatically!
-
-📁 Repository Contents
-
-File Name
-
-Description
-
-HR_Analytics_Dashboard_Dataset.xlsm
-
-Main macro-enabled Excel workbook containing the dataset, 4 PivotTables, 2 Slicers, 3 Charts, and VBA code
-
-Screenshot (5).png
-
-Full-screen preview of the interactive dashboard filtered by Sales & Bengaluru
-
-README.md
-
-Complete project documentation and visual walkthrough
-
-🔒 Data Disclaimer
-
-All employee names, ages, and salary figures in this dataset are synthetic/sample records created solely for learning Excel data analysis and portfolio demonstration.
+1. **Clone the repository** or download the `.xlsm` file directly:
+   ```bash
+   git clone [https://github.com/Destroyer-sword/excel-data-analysis-dashboard.git](https://github.com/Destroyer-sword/excel-data-analysis-dashboard.git)
